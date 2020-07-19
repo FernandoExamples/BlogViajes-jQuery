@@ -1,0 +1,279 @@
+html {
+  font-size: 62.5%; /*Reset para REMS - 62.5 = 10px de 16px*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 2;
+}
+h2 {
+  color: #00b8e4;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* ====================== GLOBALES =============== */
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+/* =============================================== */
+
+/* ====================== Botones =============== */
+.btn {
+  text-align: center;
+  padding: 1rem 6rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #0283a3;
+}
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+  }
+}
+.btn-primario {
+  background-color: #00b8e4;
+}
+/* =============================================== */
+/* ====================== HEADER =============== */
+.site-header {
+  padding: 2rem 0 0 0;
+}
+/* =============================================== */
+/* ====================== Navegacion =============== */
+.barra {
+  background-color: #db008d;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .barra nav {
+    width: 100%;
+    min-width: 120rem;
+    position: relative;
+  }
+  .barra nav > ul > li {
+    float: left;
+  }
+  .barra nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.barra a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .barra a {
+    width: 20rem;
+  }
+}
+.barra a:hover {
+  background-color: #b10474;
+}
+
+/* Segundo Nivel */
+.barra nav ul ul {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 184, 228, 1);
+  display: none;
+  z-index: 1;
+}
+
+.barra nav ul li:hover ul {
+  display: block;
+}
+
+/* =============================================== */
+
+/* ====================== SERVICIOS =============== */
+.servicios {
+  margin-top: 3rem;
+}
+.servicios nav {
+  background-color: #00b8e4;
+}
+.servicios nav a {
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.servicios nav a:hover {
+  background-color: #db008d;
+}
+
+.nuestros-servicios {
+  position: relative;
+  height: 15rem;
+}
+
+.nuestros-servicios > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2rem;
+  background-color: #db008d;
+  color: white;
+  display: none;
+}
+.nuestros-servicios p {
+  line-height: 1;
+}
+.nuestros-servicios h3 {
+  margin: 0;
+}
+/* =============================================== */
+
+/* ====================== Contenido Principal =============== */
+.contenido-principal {
+  margin-top: 4rem;
+}
+.contenido-principal,
+.sidebar {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    width: 70%;
+    float: left;
+    padding: 0 6rem 0 0;
+  }
+  .sidebar {
+    width: 30%;
+    float: right;
+    margin-top: 4rem;
+  }
+}
+.entrada-blog {
+  margin-bottom: 3rem;
+}
+.entrada-blog {
+  text-align: justify;
+}
+.entrada-blog:last-of-type {
+  margin: 0;
+}
+
+.entrada-blog img {
+  display: block;
+}
+@media (min-width: 480px) {
+  .entrada-blog img {
+    width: 30rem;
+    float: left;
+    margin: 0 3rem 3rem 0;
+  }
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 1rem;
+}
+.sidebar ul li:hover {
+  background-color: #00b8e4;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
+}
+.sidebar ul li a {
+  color: #00b8e4;
+  font-size: 18px;
+  text-decoration: none;
+}
+/* =============================================== */
+
+/* ====================== FOOTER =============== */
+.site-footer {
+  background-color: #db008d;
+  padding-top: 4rem;
+  margin-top: 6rem;
+  color: white;
+  text-align: center;
+}
+.site-footer .menu {
+  display: none;
+}
+.site-footer h2 {
+  color: white;
+  font-size: 2rem;
+}
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  margin-right: 2rem;
+}
+.site-footer a:last-of-type {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .site-footer .menu {
+    display: block;
+  }
+
+  .site-footer .nosotros {
+    float: left;
+    width: 30%;
+    text-align: left;
+  }
+  .site-footer .menu {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  .copyrigth {
+    background-color: #b10474;
+    margin: 5rem 0 0 0;
+    padding: 2rem 0;
+  }
+}
+/* =============================================== */
+
+.activo {
+  background-color: #db008d;
+}
+.fondo-rojo {
+  background-color: red;
+}
